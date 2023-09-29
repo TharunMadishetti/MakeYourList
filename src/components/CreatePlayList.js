@@ -110,9 +110,9 @@ export default function CreatePlayList({cart,token,removeFromCart,userId,setCart
           </form>
           <button className='text-black bg-white p-2 m-2 font-semibold rounded-md'>
             {link ? (
-              <button href={link} target="_blank" rel="noreferrer">
+              <a href={link} target="_blank" rel="noreferrer">
                 View Playlist
-              </button>
+              </a>
             ) : (
               <button className='' onClick={addToMyLists}>
                 Add to PlayLists
